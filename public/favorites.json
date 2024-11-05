@@ -1,8 +1,15 @@
 {
   "favorites": [
     {
-      "id": "m2",
-      "title": "This is a second meetup",
+      "id": "m0.8713881434053674",
+      "title": "Add new meetup test from front",
+      "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSMnBGxbOPL4NmYh77pdHsEk7x2zdWUw4s8l3K5WiRt8YuuKo159bO0rNW-VqCQ_1wZYKZsmt5mMyfgP7rU0a_wq9zSq9oNIE9UvHefsQ",
+      "address": "C/Zamora 4",
+      "description": "This is a test to check the functionality of add new meetup"
+    },
+    {
+      "id": "m1",
+      "title": "This is a first meetup",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Stadtbild_M%C3%BCnchen.jpg/2560px-Stadtbild_M%C3%BCnchen.jpg",
       "address": "Meetupstreet 5, 12345 Meetup City",
       "description": "This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!"

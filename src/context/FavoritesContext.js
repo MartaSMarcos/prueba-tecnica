@@ -12,7 +12,7 @@ export function FavoritesContextProvider({ children }) {
 
   //Cargar datos del json al iniciar
   useEffect(() => {
-    fetch("http://localhost:3002/favorites")
+    fetch("http://localhost:3003/favorites")
       .then((response) => response.json())
       .then((data) => {
         setFavorites(data || []);
@@ -22,7 +22,7 @@ export function FavoritesContextProvider({ children }) {
 
   //Guardar datos en el json
   useEffect(() => {
-    fetch("http://localhost:3002/favorites", {
+    fetch("http://localhost:3003/favorites", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export function FavoritesContextProvider({ children }) {
   const addFavoriteHandler = (meetup) => {
     setFavorites((prevFavorites) => [...prevFavorites, meetup]);
   
-    fetch("http://localhost:3002/favorites", {
+    fetch("http://localhost:3003/favorites", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -52,7 +52,7 @@ export function FavoritesContextProvider({ children }) {
     setFavorites((prevFavorites) => {
       const updatedFavorites = prevFavorites.filter((meetup) => meetup.id !== meetupId);
   
-      fetch(`http://localhost:3002/favorites/${meetupId}`, {
+      fetch(`http://localhost:3003/favorites/${meetupId}`, {
         method: "DELETE",
       });
   
